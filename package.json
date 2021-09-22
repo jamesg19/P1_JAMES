@@ -1,0 +1,20 @@
+{
+    "name": "p1_james",
+    "version": "1.0.0",
+    "description": "super calculadora",
+    "main": "index.js",
+    "scripts": {
+        "live": "live-server"
+    },
+    "keywords": [
+        "calculadora"
+    ],
+    "author": "JAMES GRAMAJO <james2000@hotmail.es>",
+    "license": "MIT",
+    "devDependencies": {
+        "live-server": "^1.2.1"
+    },
+    "dependencies": {
+        "bootstrap": "^5.1.1"
+    }
+}
