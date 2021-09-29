@@ -1,4 +1,6 @@
-<html>  
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,54 +18,87 @@
     <br>
     <div class="row justify-content-center">
 			<div class="col col-lg-6 p-1">
-				<textarea class="form-control text-end fs-3" placeholder="0" id="text" readonly wrap="off"></textarea>
+				<textarea class="form-control text-end fs-3" placeholder="0.0" id="text" readonly wrap="off"></textarea>
 			</div>
 		</div>
-    <table align="center" >
-        <thead>
-        <th><button type="button" data-value="^" class="btn btn-secondary">&nbsp^&nbsp</button></th>
-        <th><button type="button" data-value="(" class="btn btn-secondary">&nbsp(&nbsp</button></th>
-        <th><button type="button" data-value=")" class="btn btn-secondary">&nbsp)&nbsp</button></th>
-        <th><button type="button"  class="btn btn-secondary">&nbspe&nbsp</button></th>
-        <th><button type="button"  class="btn btn-secondary">&nbspCE&nbsp</button></th>
-        </thead>
 
-        <tbody>
-        <tr align="justify" >
-        <td><button type="button" data-value="" class="btn btn-secondary">&nbsp&nbsp&nbsp</button></td>
-        <td><button type="button" data-value="7" class="btn btn-secondary">&nbsp7&nbsp</button></td>
-        <td><button type="button" data-value="8" class="btn btn-secondary">&nbsp8&nbsp</button></td>
-        <td><button type="button" data-value="9" class="btn btn-secondary">&nbsp9&nbsp</button></td>
-        <td><button type="button" data-value="/" class="btn btn-secondary">&nbsp/&nbsp</button></td>
-        </tr>
-
-        <tr>
-        <td><button type="button"  class="btn btn-secondary">&nbsp&nbsp&nbsp</button></td>
-        <td><button type="button" data-value="4" class="btn btn-secondary">&nbsp4&nbsp</button></td>
-        <td><button type="button" data-value="5" class="btn btn-secondary">&nbsp5&nbsp</button></td>
-        <td><button type="button" data-value="6" class="btn btn-secondary">&nbsp6&nbsp</button></td>
-        <td><button type="button" data-value="*" class="btn btn-secondary">&nbsp*&nbsp</button></td>
-        </tr>
-
-        <tr>
+        <div class="row">
         
-        <td><button type="button" data-value="" class="btn btn-secondary">&nbsp&nbsp&nbsp</button></td>
-        <td><button type="button" data-value="1" class="btn btn-secondary">&nbsp1&nbsp</button></td>
-        <td><button type="button" data-value="2" class="btn btn-secondary">&nbsp2&nbsp</button></td>
-        <td><button type="button" data-value="3" class="btn btn-secondary">&nbsp3&nbsp</button></td>
-        <td><button type="button" data-value="-" class="btn btn-secondary">&nbsp-&nbsp</button></td>
-        </tr> 
-        <tr>
-        <td><button type="button" data-value="" class="btn btn-secondary">&nbspans&nbsp</button></td>
-        <td><button type="button" data-value="0" class="btn btn-secondary">&nbsp0&nbsp</button></td>
-        <td><button type="button" data-value="." class="btn btn-secondary">&nbsp.&nbsp</button></td>
-        <td><button type="button" data-value="=" class="btn btn-secondary">&nbsp=&nbsp</button></td>
-        <td><button type="button" data-value="+" class="btn btn-secondary">&nbsp+&nbsp</button></td>
-        </tr>
+           <div class="col" align="center" >
+                <button type="button" data-value="^" class="btn btn-secondary">&nbsp^&nbsp</button>
 
-        </tbody>
-    </table>
+                <button type="button" data-value="(" class="btn btn-secondary">&nbsp(&nbsp</button>
 
+                <button type="button" data-value=")" class="btn btn-secondary">&nbsp)&nbsp</button>
+
+                <button type="button"  class="btn btn-secondary">&nbspe&nbsp</button>
+
+                <button type="button" id="btn-ac" class="btn btn-secondary">&nbspCE&nbsp</button>
+            </div>
+        </div>
+        
+
+        <div class="row">
+            <div class="col" align="center" >
+                <button type="button" data-value="" class="btn btn-secondary">&nbsp&nbsp&nbsp</button>
+
+                <button type="button" data-value="7" class="btn btn-secondary">&nbsp7&nbsp</button>
+
+                <button type="button" data-value="8" class="btn btn-secondary">&nbsp8&nbsp</button>
+
+                <button type="button" data-value="9" class="btn btn-secondary">&nbsp9&nbsp</button>
+
+                <button type="button" id="btn-divide" data-value="/" class="btn btn-secondary">&nbsp/&nbsp</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col" align="center" >
+                <button type="button"  class="btn btn-secondary">&nbsp&nbsp&nbsp</button>
+
+                <button type="button" data-value="4" class="btn btn-secondary">&nbsp4&nbsp</button>
+
+                <button type="button" data-value="5" class="btn btn-secondary">&nbsp5&nbsp</button>
+
+                <button type="button" data-value="6" class="btn btn-secondary">&nbsp6&nbsp</button>
+
+                <button type="button"  data-value="*" id="btn-multiplication" class="btn btn-secondary">&nbsp*&nbsp</button>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            <div class="col" align="center" >
+                <button type="button" data-value="" class="btn btn-secondary">&nbsp&nbsp&nbsp</button>
+
+                <button type="button" data-value="1" class="btn btn-secondary">&nbsp1&nbsp</button>
+
+                <button type="button" data-value="2" class="btn btn-secondary">&nbsp2&nbsp</button>
+
+                <button type="button" data-value="3" class="btn btn-secondary">&nbsp3&nbsp</button>
+
+                <button type="button" data-value="-" class="btn btn-secondary">&nbsp-&nbsp</button>
+            </div>
+        </div>
+        
+        
+        <div class="row">
+            <div class="col" align="center" >
+                <button type="button" data-value="" class="btn btn-secondary">&nbspans&nbsp</button>
+
+                <button type="button" data-value="0" class="btn btn-secondary">&nbsp0&nbsp</button>
+
+                <button type="button" data-value="." class="btn btn-secondary">&nbsp.&nbsp</button>
+
+                <button type="button" id="btn-equal" data-value="=" class="btn btn-secondary">&nbsp=&nbsp</button>
+
+                <button type="button" data-value="+" class="btn btn-secondary">&nbsp+&nbsp</button>
+            </div>
+        </div>
+
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="src/app.js"></script>
 
 </body>
 
