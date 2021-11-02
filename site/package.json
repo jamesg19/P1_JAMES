@@ -1,0 +1,30 @@
+{
+    "name": "supercalculadora_ima",
+    "version": "1.0.0",
+    "description": "calculadora dockerfile",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./src/index.js",
+        "startdev": "nodemon ./src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jamesg19/P1_JAMES.gt"
+    },
+    "keywords": [
+        "http",
+        "server_nodejs"
+    ],
+    "author": "jamesgramajo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jamesg19/P1_JAMES"
+    },
+    "homepage": "https://github.com/jamesg19/P1_JAMES",
+    "dependencies": {
+        "bootstrap": "^5.1.1",
+        "ejs": "^3.1.6",
+        "express": "^4.17.1",
+        "nodemon": "^2.0.12"
+    }
+}

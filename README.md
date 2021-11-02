@@ -1,15 +1,18 @@
-Super Calculadora
-FASE 1
-
-creacion del proyecto
-npm init -y
+# SuperCalculadora_Practica Lab Archivos
 
 
-npm install
-npm install -g live-server
 
-npm run live
 
-"scripts": {
-    "live": "live-server"
-  },
+### Requisitos
+Para hacer funcionar el proyecto necesita
+* Tener instalado docker
+* Tener instalado docker-compose
+
+### Comandos
+* **Inicio de los contendores:** 
+```bash
+docker-compose up -d --build
+```
+* **Terminar los contendores:** 
+```bash
+docker-compose down

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Super Calculadora</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="/js/app.js"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button" style="height:80px;background-color:#37434d;color:#ffffff;">
+            <div class="container-fluid"><a class="navbar-brand" href="http://localhost:8080/"><i class="fa fa-globe"></i>&nbsp;Super Calculadora James</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" style="color:#ffffff;" href="http://localhost:8080/"><i class="fa fa-home"></i>&nbsp;Calculadora</a></li>
+                        <li class="nav-item"><a class="nav-link " style="color:#ffffff;" href="/help"><i class="fa fa-wpexplorer"></i>&nbsp;FAQs</a></li>
+                        <li class="nav-item"><a class="nav-link " style="color:#ffffff;" href="/about"><i class="fa fa-star-o"></i>&nbsp;About us</a></li>
+                        <li class="nav-item"><a class="nav-link " style="color:#ffffff;" href="/login"><i class="fa fa-sign-in"></i>&nbsp;Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div align="center" class="row">
+        <div class="col" ></div>
+        <div class="col" >
+            <input type="number" placeholder="Numero 1" id="num1" aria-label="Numero 1" aria-describedby="basic-addon1">
+        </div>
+        <div class="col" >
+        <select class="form-select" name="operador" id="operador">
+              <option value="suma">suma</option>
+              <option value="resta">resta</option>
+              <option value="producto">producto</option>
+              <option value="division">division</option>
+              <option value="potencia">potencia</option>
+        </select>
+        </div>
+        <div class="col" >
+        <input type="number" placeholder="Numero 2" id="num2" aria-label="Numero 2" aria-describedby="basic-addon1">
+        </div>
+        <div class="col" ></div>
+    </div>
+    <div align="center" class="row">
+        <br>
+    </div>
+    <div align="center" class="row">
+        <div class="col" ></div>
+        <div class="col" >
+        <button class="btn btn-outline-success" type="button" onclick="calcular();">Calcular Operacion</button> 
+        </div>
+        <div class="col" ></div>
+    </div>
+
+    <div class="row">
+        <div class="h-100 p-5 bg-light border rounded-3">
+            <h2>Historial</h2>
+
+            <div id="historico">
+                <p>Detalle</p>
+                <p id="hist" name="hist"> </p>
+            </div>
+
+            <button class="btn btn-outline-secondary" type="button" onclick='Actualizar();'>Actualizar</button>
+        </div>
+    </div>
+
+    <div class="h-100 p-5 bg-light border rounded-3" class="container-xxl">
+        
+        <div class="col">
+
+            <div class="cont-res">
+                <form>
+                <label class="d-lg-table"><h2>Resultado: </h2></label>
+                <br>
+                <p id="operacion"></p>
+                <br>
+                <br>
+                <div class="row">
+
+                  <div class="col">
+                    <p id="result">Resultado:</p>
+                  </div>
+                  <div class="col">
+                    <p id="res"></p>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+            
+          </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

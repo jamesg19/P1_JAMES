@@ -1,0 +1,57 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+
+  /*
+* autor: @hectoradolfo
+*/
+*{
+    margin: 0;
+    padding: 0;
+  }
+  header{
+    font-family: monospace;
+    width: 780px;
+    margin: 10 auto;
+  }
+  ul{
+    list-style: none;
+  }
+  #menu li>a{
+    background-color: rgb(52, 151, 90);
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 120px;
+  }
+  #menu li>a:hover{
+    color: #000;
+    background-color: #eaeaea;
+  }
+  #menu>li{
+    float: left;
+    text-align:center
+  }
+  #menu>li>ul{
+    display: none;
+  }
+  #menu>li:hover>ul {
+    display:contents;
+  }
+  
+  .cont-res {
+    background-color: rgb(0, 89, 255);
+    width: 500px;
+    height: 300px;
+    padding: 15px;
+    /*margin: 30px;*/
+    justify-content: left;
+    /* IMPORTANTE */
+    
+    float: left;
+  }
+
+  .div {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
